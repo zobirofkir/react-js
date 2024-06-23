@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ function Header() {
       <nav className="bg-black w-full xl:p-5 p-2">
         <div className="flex justify-between items-center px-4 py-2">
           <div className="text-white font-bold text-xl">
-            <a href="/">Home</a>
+            <Link to={'/'}>Home</Link>
           </div>
           <div className="block lg:hidden">
             <button className="text-white focus:outline-none" onClick={toggleMenu}>
@@ -22,10 +23,10 @@ function Header() {
             </button>
           </div>
           <div className="hidden lg:flex space-x-10">
-            <a href="/about" className="text-white font-bold text-xl">About</a>
-            <a href="/contact" className="text-white font-bold text-xl">Contact</a>
-            <a href="" className="text-white font-bold text-xl">Login</a>
-            <a href="" className="text-white font-bold text-xl">Register</a>
+            <Link to={"/about"} className='text-white font-bold text-xl'>About</Link>
+            <Link to={'/contact'} className='text-white font-bold text-xl'>Contact</Link>
+            <a href="#" className="text-white font-bold text-xl">Login</a>
+            <a href="#" className="text-white font-bold text-xl">Register</a>
           </div>
         </div>
         {isOpen && (
