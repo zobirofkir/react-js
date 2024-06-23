@@ -1,19 +1,18 @@
 import React from 'react'
-import Header from "./Components/Header"
-import Body from "./Components/Body"
-import Footer from "./Components/Footer"
-import About from "./Components/About"
-import Contact from "./Components/Contact"
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import HomeScreen from './Screens/HomeScreen'
+import AboutScreen from './Screens/AboutScreen'
+import ContactScreen from './Screens/ContactScreen'
 
 function App() {
   return (
-    <>
-      <Header/>
-      <Body/>
-      <About/>
-      <Contact/>
-      <Footer/>
-    </>
+    <BrowserRouter>
+      <Routes>
+          <Route path='/' element={<HomeScreen/>}/>  
+          <Route path='/about' element={<AboutScreen/>}/>
+          <Route path='/contact' element={<ContactScreen/>}/>
+      </Routes> 
+    </BrowserRouter>
   )
 }
 

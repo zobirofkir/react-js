@@ -9,7 +9,7 @@ function Body() {
           <h1 className='xl:text-2xl font-bold uppercase whitespace-nowrap text-white '>Hello I'm Zobir Ofkir</h1>
           <p className='text-lg font-bold text-white'> I'm a Developer </p>
           <div className='container xl:m-24 m-10 py-10'>
-              <button className='bg-gray-700 p-5 rounded-full xl:p-5 whitespace-nowrap text-white'> Contact Me </button>
+          <a href='/contact'> <button className='bg-gray-700 p-5 rounded-full xl:p-5 whitespace-nowrap text-white'> Contact Me </button> </a>
           </div>
         </div>
 
