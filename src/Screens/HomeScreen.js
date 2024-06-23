@@ -7,13 +7,13 @@ import Footer from '../Components/Footer'
 
 function HomeScreen() {
   return (
-    <>
+    <div>
       <Header/>
       <Body/>
       <About/>
       <Contact/>
       <Footer/>
-    </>
+    </div>
   )
 }
 
